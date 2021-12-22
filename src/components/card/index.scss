@@ -1,0 +1,66 @@
+.card {
+  background-color: $menu;
+  border-radius: 20px;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-bottom: 25px;
+  padding-right: 16px;
+  display: flex;
+
+  .icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .information {
+    margin-left: 25px;
+    flex: 1 1 0;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 44px;
+
+      .title {
+        font-size: 24px;
+        line-height: 26px;
+      }
+
+      .id {
+        align-self: start;
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+
+    .sub-header {
+      font-size: 14px;
+      line-height: 15px;
+      margin-bottom: 18px;
+    }
+
+    .stats__list {
+      height: 22px;
+
+      .stat {
+        display: inline;
+        font-size: 18px;
+        line-height: 20px;
+        margin-right: 16px;
+
+        &.str {
+          color: $str;
+        }
+
+        &.dex {
+          color: $dex;
+        }
+
+        &.int {
+          color: $int;
+        }
+      }
+    }
+  }
+}

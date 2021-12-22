@@ -1,0 +1,15 @@
+.header {
+  background-color: $menu;
+
+  .header__title {
+    margin-left: 265px;
+    margin-top: 25px;
+
+    .title {
+      font-size: 30px;
+      height: 60px;
+      line-height: 33px;
+      font-weight: 400;
+    }
+  }
+}

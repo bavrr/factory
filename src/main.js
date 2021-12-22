@@ -1,5 +1,9 @@
 import { createApp } from "vue";
-import App from "./App.vue";
-import store from "./store";
+import App from "./pages/app.vue";
+import { store } from "./store";
 
-createApp(App).use(store).mount("#app");
+import "@/assets/styles/common.scss";
+
+const app = createApp(App);
+app.use(store);
+app.mount("#app");

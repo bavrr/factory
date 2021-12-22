@@ -1,0 +1,29 @@
+.progress__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 44px;
+
+  .value {
+    margin-left: 17px;
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .bar {
+    flex: 1 1 0;
+    border: 0;
+    background-color: $progress-background;
+    height: 10px;
+    border-radius: 20px;
+
+    &::-webkit-progress-bar {
+      background-color: $progress-background;
+      border-radius: 20px;
+    }
+    &::-webkit-progress-value {
+      background-color: $progress;
+      border-radius: 20px;
+    }
+  }
+}

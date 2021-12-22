@@ -1,0 +1,70 @@
+.stats__menu {
+  background-color: $menu;
+  border-radius: 20px;
+
+  .menu__block {
+    padding-top: 28px;
+    padding-left: 28px;
+    padding-right: 21px;
+    border-bottom: 1px solid $border;
+
+    &:nth-last-child(1) {
+      border-bottom: none;
+      padding-bottom: 85px;
+    }
+
+    .title {
+      font-size: 24px;
+      line-height: 26px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+    }
+
+    .stats__list {
+      margin-top: 3px;
+      margin-bottom: 28px;
+
+      .stat__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 44px;
+
+        .stat {
+          font-size: 20px;
+          line-height: 22px;
+        }
+
+        .value {
+          font-size: 24px;
+          line-height: 26px;
+        }
+      }
+    }
+
+    .progress__list {
+      margin-top: 14px;
+
+      .progress__wrapper {
+        .label {
+          font-size: 14px;
+          line-height: 15px;
+          height: 22px;
+          display: flex;
+          align-items: center;
+        }
+
+        &:not(&:first-child) {
+          margin-top: 17px;
+        }
+      }
+    }
+
+    .text {
+      margin-top: 15px;
+      margin-bottom: 40px;
+      white-space: pre-wrap;
+    }
+  }
+}

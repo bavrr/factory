@@ -1,0 +1,17 @@
+.body {
+  display: flex;
+  justify-content: center;
+
+  .stats__block {
+    flex: 1 2 0;
+    max-width: 500px;
+    margin-right: 40px;
+    height: 842px;
+  }
+
+  .card__block {
+    flex: 2 1 0;
+    max-width: 900px;
+    height: 842px;
+  }
+}
